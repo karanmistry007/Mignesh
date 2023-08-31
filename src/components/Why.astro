@@ -1,0 +1,17 @@
+---
+interface Props {
+	source: string;
+	body: string;
+}
+
+const { source, body } = Astro.props;
+---
+
+<div class="max-w-[194px] text-center">
+    <div class="w-fit m-auto">
+        <img src={source} alt="why">
+    </div>
+    <p>
+        {body}
+    </p>
+</div>

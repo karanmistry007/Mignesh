@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Why from '../components/Why.astro'
 // import Card from '../components/Card.astro';
 // import { Image } from 'astro:assets';
 // import project from '../../public/project.jpg';
@@ -8,14 +9,14 @@ import slide_1 from '../../public/images/slider_1.png'
 import arrow_top from '../../public/images/vector_top.png'
 import arrow_bottom from '../../public/images/vector_bottom.png'
 import drum from '../../public/images/drum.png'
+import why_main from '../../public/images/why_main.png'
 
 ---
 
 <Layout title="Mignesh Global">
 	<main>
-		
 		<!-- slider section  -->
-		<section class="slider bg-[#D9D9D9] w-screen h-[701px] relative">
+		<section class="slider bg-[#D9D9D9] w-screen h-[701px] relative hidden">
 			<div class="slide-1 bg-[url(../../public/images/slider_1.png)] bg-no-repeat bg-right w-full h-full text-center md:text-left">
 				<!-- slider caption -->
 				<div class="caption pt-[70px] w-[90%] sm:w-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto relative z-[1]">
@@ -58,6 +59,39 @@ import drum from '../../public/images/drum.png'
 				<button class="1 w-[30px] h-[5px] md:w-[5px] md:h-[30px] rounded-[3px] bg-[#E98135]"></button>
 				<button class="2 w-[30px] h-[5px] md:w-[5px] md:h-[30px] rounded-[3px] bg-slate-600 md:bg-[#2E2C7033]"></button>
 				<button class="3 w-[30px] h-[5px] md:w-[5px] md:h-[30px] rounded-[3px] bg-slate-600 md:bg-[#2E2C7033]"></button>
+			</div>
+		</section>
+
+		<section class="why bg-gradient-to-r from-[#242D4A] to-[#4B5EAA] h-[548px] text-white">
+			<div class="flex justify-between items-center h-full w-[90%] sm:w-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto">
+				<div class="item-1 max-w-[524px]">
+					<img src={why_main.src} alt="">
+					<p class="text-[32px]">
+						Get the best quality products at
+					</p>
+					<h2  class="text-5xl font-bold">
+						pocket-friendly rates!
+					</h2>
+					<p  class="text-base mt-10 max-w-[463px]">
+						Mignesh Global is the leading Company offering a wide range of products for all Infrastructure and Manufacturing companies looking to get high-quality products at the best rate and in a shorter time.
+					</p>
+				</div>
+
+				<div class="item-2 w-[50%]">
+					<div class="heading my-5">
+						<h3 class="text-2xl">
+							Why Choose Us?
+						</h3>
+					</div>
+					<div class="card grid grid-cols-3 gap-7">
+						<Why source='../../public/images/why_1.png' body="One-stop platform for a variety of products!"></Why>
+						<Why source='../../public/images/why_2.png' body="Best Market Rates."></Why>
+						<Why source='../../public/images/why_3.png' body="Free Samples."></Why>
+						<Why source='../../public/images/why_4.png' body="Fast Distribution with Mignesh Logistics."></Why>
+						<Why source='../../public/images/why_5.png' body="High-quality, trusted products."></Why>
+						<Why source='../../public/images/why_6.png' body="End-to-End Customer Support."></Why>
+					</div>
+				</div>
 			</div>
 		</section>
 		
