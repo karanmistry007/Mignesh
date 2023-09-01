@@ -1,0 +1,39 @@
+---
+interface Props {
+	title: string;
+	body1: string;
+    body2: string;
+    source: string;
+    btn:string;
+}
+
+const { title,source, body1,body2,btn } = Astro.props;
+---
+
+
+<div class="product max-w-[414px]">
+    <div class="head bg-gradient-to-r from-[#242D4A] to-[#4B5EAA] text-white ">
+        <h2 class="p-4 font-bold text-lg">
+            {title}
+        </h2>
+    </div>
+    <div class="image">
+        <img src={source} alt="procuct">
+    </div>
+    <div class="text p-5 bg-[#E4E7EC] text-[#2C2C2C] text-base">
+        <p>
+            {body1}
+        </p>
+        <h3 class="my-5 font-semibold">
+            {body2}
+        </h3>
+    </div>
+    <div class="btn w-full bg-[#DADCE4]">
+        <button class="flex w-full p-5 justify-between items-center">
+            <span class="font-bold text-base">                
+                {btn}
+            </span>
+            <img  src="/images/right_orange.svg" alt=">">
+        </button>
+    </div>
+</div>
