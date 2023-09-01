@@ -64,7 +64,7 @@ import why_main from '../../public/images/why_main.png'
 		</section>
 
 		<!-- Why choose us section  -->
-		<section class="hidden why bg-gradient-to-r from-[#242D4A] to-[#4B5EAA] text-white">
+		<section class=" why bg-gradient-to-r from-[#242D4A] to-[#4B5EAA] text-white">
 			<div class="flex flex-col md:flex-row justify-between items-center py-20 w-[90%] sm:w-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto">
 				<div class="item-1 max-w-[524px] md:w-[50%] lg:w-[40%]">
 					<img src={why_main.src} alt="">
@@ -161,7 +161,7 @@ import why_main from '../../public/images/why_main.png'
 		</section>
 
 		<!-- client section  -->
-		<section class="client ">
+		<section class="client hidden">
 			<div class="client w-[90%] sm:w-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto my-10 sm:my-20">
 				<div class="head text-center md:text-left">
 					<h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
@@ -172,9 +172,10 @@ import why_main from '../../public/images/why_main.png'
 					</h2>
 				</div>
 
-				<div class="hidden main-slide overflow-hidden relative my-10 sm:my-[70px] h-[263px]">
+				<!-- hidden slider  -->
+				<div class="main-slide overflow-hidden relative my-10 sm:my-[70px] h-[263px]">
 					
-					<div class="slide-1 w-full absolute">
+					<div class="slide-1 w-full absolute bg-white">
 						<div class="client-slide grid grid-cols-4 justify-between w-full">
 							<div class="item">
 								<img src="/images/client_1.svg" alt="">
@@ -191,7 +192,7 @@ import why_main from '../../public/images/why_main.png'
 						</div>
 					</div>
 
-					<div class="slide-2 w-full absolute trans_left">
+					<div class="slide-2 w-full absolute trans_left bg-white">
 						<div class="client-slide grid grid-cols-4 justify-between w-full">
 							<div class="item">
 								<img src="/images/client_5.svg" alt="">
@@ -215,15 +216,135 @@ import why_main from '../../public/images/why_main.png'
 
 
 
+			</div>
+		</section>
 
+		<!-- source section  -->
+		<section class="source bg-gradient-to-r from-[#242D4A] to-[#4B5EAA]">
+			<div class="source w-[90%] sm:w-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto my-10 sm:my-20">
+				<div class="py-10 md:py-16 gap-10 flex flex-col md:flex-row justify-between items-center  text-white">
+					<div class="md:w-[65%] lg:w-[65%] xl:w-auto">
+						<h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[56px] mb-6 text-center md:text-left">
+							Source the high-quality products<br class="hidden xl:block">
+							from Mignesh Global!
+						</h2>
+						<button class="mt-6 text-sm sm:text-base flex justify-evenly gap-2 p-2 sm:h-11 sm:w-full sm:max-w-[240px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0">
+							<span>
+								CHECK PRODUCTS NOW
+							</span>
+							<img src={right_arrow.src} alt=">">
+						</button>
+					</div>
+					<div class="w-[70%] md:w-auto flex items-center justify-center">
+						<img src="/images/drum_1.svg" alt="">
+					</div>
+				</div>
 			</div>
 		</section>
 	
+		<!-- team section  -->
+		<section class="team">
+			<div class="team w-[90%] sm:w-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto my-10 sm:my-20">
+				<div class="head text-center md:text-left">
+					<h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
+						Meet
+					</h6>
+					<h2 class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase">
+						Our TEAM
+					</h2>
+				</div>
+
+				<div class="members text-center flex gap-12 md:gap-10 items-center flex-col md:flex-row justify-evenly my-10 mx-5 m-auto">
+					
+					<div class="t1 max-w-[276px]">
+						<div class="1 w-fit bg-[#E98135] rounded-full">
+							<img src="/images/team_1.svg" alt="">
+						</div>
+						<h3 class="text-[#48389C] text-lg font-bold mt-3">
+							Arjun N. Pachani
+						</h3>
+						<p class="md:mb-3">
+							CEO
+						</p>
+						<div class="social m-auto flex gap-5 justify-center items-center">
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/facebook.svg" alt="">
+							</a>
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/linkdin.svg" alt="">
+							</a>
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/twitter.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="t1 max-w-[276px]">
+						<div class="1 w-fit bg-[#E98135] rounded-full">
+							<img src="/images/team_1.svg" alt="">
+						</div>
+						<h3 class="text-[#48389C] text-lg font-bold mt-3">
+							Arjun N. Pachani
+						</h3>
+						<p class="md:mb-3">
+							CEO
+						</p>
+						<div class="social m-auto flex gap-5 justify-center items-center">
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/facebook.svg" alt="">
+							</a>
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/linkdin.svg" alt="">
+							</a>
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/twitter.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+
+					<div class="t1 max-w-[276px]">
+						<div class="1 w-fit bg-[#E98135] rounded-full">
+							<img src="/images/team_1.svg" alt="">
+						</div>
+						<h3 class="text-[#48389C] text-lg font-bold mt-3">
+							Arjun N. Pachani
+						</h3>
+						<p class="md:mb-3">
+							CEO
+						</p>
+						<div class="social m-auto flex gap-5 justify-center items-center">
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/facebook.svg" alt="">
+							</a>
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/linkdin.svg" alt="">
+							</a>
+							<a href="" class="w-fit cursor-pointer">
+								<img src="/images/twitter.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+		</section>
 
 	</main>
 	<script src="../../src/js/client_slide.js"></script>
 </Layout>
 
 <style is:global>
+	.trans_right{
+		transform: translateX(-100%) !important; 
+	}
+	.trans_left{
+		transform: translateX(100%) !important;
+	}
+	.slide-1,.slide-2{
+		transition: all 0.6s ease-in-out;
+	}
+
 </style>
 
