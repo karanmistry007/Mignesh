@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Why from '../components/Why.astro';
 import Product from '../components/Product.astro';
+import Faq from '../components/Faq.astro'
 // import Card from '../components/Card.astro';
 // import { Image } from 'astro:assets';
 // import project from '../../public/project.jpg';
@@ -328,6 +329,55 @@ import why_main from '../../public/images/why_main.png'
 
 					
 				</div>
+			</div>
+		</section>
+
+		<!-- faq section  -->
+		<section class="faq bg-[#5A6079] text-white">
+			<div class="faq w-[90%] sm:w-auto sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto my-10 sm:my-20">
+				<div class="head text-center md:text-left py-10 sm:py-20">
+					<h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
+						FAQs
+					</h6>
+					<h2 class=" text-2xl sm:text-[32px] md:leading-7 font-bold uppercase">
+						Frequently Asked Questions
+					</h2>
+				</div>
+
+				<div class=" grid md:grid-cols-2 justify-between gap-10 md:gap-8 xl:gap-16 pb-16 sm:pb-32">					
+					<Faq source="/images/faq_1.svg",
+					head="Does Mignesh Global Pvt Ltd have a minimum order requirement for their products?",
+					body="Yes, Mignesh Global Pvt Ltd has a minimum order requirement. You need to place an order of at least 20,000kg or 20,000 liters on our website.">
+					</Faq>
+					
+					<Faq source='/images/faq_2.svg',
+					head="Do you have imported products on your website?",
+					body="Yes, we have a wide range of imported products available on our platforms. As per your unique requirements, you can reach out to us, and we will help you out!">
+					</Faq>
+
+					<Faq source='/images/faq_3.svg',
+					head="Can I check the samples of your product before ordering?",
+					body="Yes, you can surely check the samples of the product before ordering. We can send you some of the pictures and report for the products via Whatsapp or email. Also - If you want, we can even send the sample to you before placing an order.">
+					</Faq>
+
+					<Faq source='/images/faq_4.svg',
+					head="How do you ensure the seamless distribution of our products?",
+					body="Yes, we have a wide range of imported products available on our platforms. As per your unique requirements, you can reach out to us, and we will help you out!  ">
+					</Faq>
+
+					<Faq source='/images/faq_5.svg',
+					head="Which payment methods do you accept at Mignesh Global Pvt Ltd?",
+					body="Mignesh Global Pvt Ltd accepts payment through various modes, including direct bank transfer, credit card, and debit card.">
+					</Faq>
+
+					<Faq source='/images/faq_6.svg',
+					head="How much time does it take to deliver my products? ",
+					body="The time to deliver your products is based on the unloading location and distance. In general, it would take around 1 to 7 days to deliver your products. Our logistics company ensures quick delivery due to our strong distribution channel. ">
+					</Faq>
+
+
+				</div>
+
 			</div>
 		</section>
 
