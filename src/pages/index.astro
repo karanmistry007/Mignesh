@@ -9,37 +9,51 @@ import Process from "../components/Process.astro";
 <Layout title="Mignesh Global">
   <main>
     <!-- slider section  -->
-    <section class="slider bg-[#D9D9D9] relative hidden">
-      <div class="slider1 bg-[url(/images/slider_1.png)] h-[400px] bg-center bg-cover">
-        
+    <section class="slider bg-[#D9D9D9] relative h-screen sm:sm:h-auto lg:h-auto">
+      
+      
+      <div class="flex w-full justify-between h-[50vh] sm:h-[400px] lg:h-[701px]">
+        <div class="bg-[#D9D9D9] w-[auto]">
+
+        </div>
+        <div class="lg:w-[100%] xl:w-[80%] self-end">
+          <img class="w-[100%] h-[50vh] sm:h-[400px] lg:h-[701px] object-cover" src="/images/slide_1.png" alt="">
+        </div>
       </div>
-      <div class="caption container-1 relative z-[1]">
-        <h2
-          class="text-2xl md:text-[40px] md:leading-[48px] text-[#48389C] uppercase md:w-[386px]"
-        >
-          <span class="normal-case"> Welcome to
-            <br>
-          </span>
-          <b class="text-3xl md:text-5xl">Mignesh</b> Global!
-        </h2>
-        <p
-          class="text-sm md:text-lg leading-6 md:w-[414px] text-[#2C2C2C] my-5"
-        >
-          Your one-stop platform to purchase high-quality Infrasture &
-          Lubricant products such as Bitumen, Emulsion, Base Oil, Furnace Oil,
-          etc.
-        </p>
-        <button
-          class="text-base flex justify-evenly h-11 w-[209px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
-        >
-          <span> CHECK PRODUCTS</span>
-          <img src="/images/right_arrow.png" alt=">" />
-        </button>
+
+
+      <div class="txt lg:w-full lg:absolute left-0 top-0">
+        <div class="caption w-fit lg:w-auto container-1 py-10 md:py-16">
+          <h2
+            class="text-2xl md:text-[40px] md:leading-[48px] text-[#48389C] uppercase md:w-[386px]"
+          >
+            <span class="normal-case">
+              Welcome to
+              <br />
+            </span>
+            <b class="text-3xl md:text-5xl">Mignesh</b> Global!
+          </h2>
+          <p
+            class="text-sm md:text-lg leading-6 md:w-[414px] text-[#2C2C2C] my-5"
+          >
+            Your one-stop platform to purchase high-quality Infrasture &
+            Lubricant products such as Bitumen, Emulsion, Base Oil, Furnace Oil,
+            etc.
+          </p>
+          <button
+            class="text-base flex justify-evenly h-11 w-[209px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
+          >
+            <span> CHECK PRODUCTS</span>
+            <img src="/images/right_arrow.png" alt=">" />
+          </button>
+        </div>
       </div>
     </section>
 
     <!-- Why choose us section  -->
-    <section class="why bg-gradient-to-r from-[#242D4A] to-[#4B5EAA] text-white">
+    <section
+      class="why bg-gradient-to-r from-[#242D4A] to-[#4B5EAA] text-white"
+    >
       <div
         class="container-1 flex flex-col md:flex-row justify-between items-center py-20"
       >
@@ -69,14 +83,8 @@ import Process from "../components/Process.astro";
               source="/images/why_1.svg"
               body="One-stop platform for a variety of products!"
             />
-            <Why
-              source="/images/why_2.svg"
-              body="Best Market <br> Rates."
-            />
-            <Why
-              source="/images/why_3.svg"
-              body="Free <br> Samples."
-            />
+            <Why source="/images/why_2.svg" body="Best Market <br> Rates." />
+            <Why source="/images/why_3.svg" body="Free <br> Samples." />
             <Why
               source="/images/why_4.svg"
               body="Fast Distribution with Mignesh Logistics."
@@ -97,7 +105,7 @@ import Process from "../components/Process.astro";
     <!-- product section  -->
     <section class="products">
       <div class="products container-1 my-10 sm:my-20">
-        <div class="head text-center md:text-left">
+        <div class="head-txt text-center md:text-left">
           <h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
             Browse through our diverse
           </h6>
@@ -234,424 +242,411 @@ import Process from "../components/Process.astro";
       </div>
     </section>
 
-      <!-- client section  -->
-      <section class="client">
-        <div class="client container-1 my-10 sm:my-20">
+    <!-- client section  -->
+    <section class="client">
+      <div class="client container-1 my-10 sm:my-20">
+        <div class="head text-center md:text-left">
+          <h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
+            Our
+          </h6>
+          <h2
+            class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
+          >
+            Esteemed Clients!
+          </h2>
+        </div>
+
+        <!-- client sloder -->
+        <div class="customer-logos w-full slider my-16 sm:my-20">
+          <div class="slide">
+            <img decoding="async" src="images/client_1.png" />
+          </div>
+          <div class="slide">
+            <img decoding="async" src="images/client_2.png" />
+          </div>
+          <div class="slide">
+            <img decoding="async" src="images/client_3.png" />
+          </div>
+          <div class="slide">
+            <img decoding="async" src="images/client_4.png" />
+          </div>
+          <div class="slide">
+            <img decoding="async" src="images/client_5.png" />
+          </div>
+          <div class="slide">
+            <img decoding="async" src="images/client_6.png" />
+          </div>
+          <div class="slide">
+            <img decoding="async" src="images/client_7.png" />
+          </div>
+          <div class="slide">
+            <img decoding="async" src="images/client_8.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--refinery section-->
+    <section class="refinery bg-[#F9F9FB]">
+      <div class="refinery container-1 py-10 md:py-20">
+        <div
+          class="head-content flex flex-col md:flex-row gap-5 md:gap-0 justify-between"
+        >
           <div class="head text-center md:text-left">
             <h6
               class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7"
             >
-              Our
+              Bitumen
             </h6>
             <h2
               class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
             >
-              Esteemed Clients!
+              Price IN INDIA
             </h2>
           </div>
 
-          <!-- client sloder -->
-          <div class="customer-logos w-full slider my-16 sm:my-20">
-            <div class="slide">
-              <img decoding="async" src="images/client_1.png" />
-            </div>
-            <div class="slide">
-              <img decoding="async" src="images/client_2.png" />
-            </div>
-            <div class="slide">
-              <img decoding="async" src="images/client_3.png" />
-            </div>
-            <div class="slide">
-              <img decoding="async" src="images/client_4.png" />
-            </div>
-            <div class="slide">
-              <img decoding="async" src="images/client_5.png" />
-            </div>
-            <div class="slide">
-              <img decoding="async" src="images/client_6.png" />
-            </div>
-            <div class="slide">
-              <img decoding="async" src="images/client_7.png" />
-            </div>
-            <div class="slide">
-              <img decoding="async" src="images/client_8.png" />
-            </div>
+          <div class="selectbox w-full md:max-w-[300px] lg:max-w-[440px]">
+            <select name="refinery" id="" class="border rounded-lg w-full p-4">
+              <option value="0">Select Refinery</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
           </div>
         </div>
-      </section>
 
-      <!--refinery section-->
-      <section class="refinery bg-[#F9F9FB]">
-        <div class="refinery container-1 py-10 md:py-20">
+        <div class="my-12">
           <div
-            class="head-content flex flex-col md:flex-row gap-5 md:gap-0 justify-between"
+            class="thead bg-[#5A6079] text-white flex flex-col md:flex-row justify-between p-[14px] border-x border-white"
           >
-            <div class="head text-center md:text-left">
-              <h6
-                class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7"
-              >
-                Bitumen
-              </h6>
-              <h2
-                class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
-              >
-                Price IN INDIA
-              </h2>
-            </div>
-
-            <div class="selectbox w-full md:max-w-[300px] lg:max-w-[440px]">
-              <select
-                name="refinery"
-                id=""
-                class="border rounded-lg w-full p-4"
-              >
-                <option value="0">Select Refinery</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-              </select>
-            </div>
+            <h3 class="text-2xl md:leading-6 font-bold">
+              Bharat Petroleum Corporation Limited
+            </h3>
+            <button
+              class="font-semibold text-base flex items-center md:items-start lg:items-center gap-2.5"
+            >
+              <img class="" src="/images/calender_icon.svg" alt="" />
+              <span> Last Updated on August 1, 2023</span>
+            </button>
           </div>
 
-          <div class="my-12">
-            <div
-              class="thead bg-[#5A6079] text-white flex flex-col md:flex-row justify-between p-[14px] border-x border-white"
-            >
-              <h3 class="text-2xl md:leading-6 font-bold">
-                Bharat Petroleum Corporation Limited
-              </h3>
-              <button
-                class="font-semibold text-base flex items-center md:items-start lg:items-center gap-2.5"
+          <div class="ref-table overflow-x-scroll lg:overflow-auto">
+            <table class="w-full">
+              <thead class="bg-[#2E2B70] text-white font-bold text-center">
+                <tr class="w-full">
+                  <th class="w-[20%] text-left">PRODUCTS</th>
+                  <th>UOM</th>
+                  <th>HSN<br /> Code</th>
+                  <th>Tariff<br /> Item</th>
+                  <th>BASIC<br /> Rate</th>
+                  <th>SGST/CGST/<br />IGST %</th>
+                  <th>SGST/CGST/<br />IGST AMT</th>
+                  <th>Total<br /> Amount</th>
+                  <th>CHANGE IN BASIC</th>
+                </tr>
+              </thead>
+
+              <tr
+                class="text-[#2C2C2C] bg-[#DEE5FF] p-1 font-bold text-lg text-center"
               >
-                <img class="" src="/images/calender_icon.svg" alt="" />
-                <span> Last Updated on August 1, 2023</span>
-              </button>
-            </div>
+                <th colspan="9"> Ex Mumbai Refinery</th>
+              </tr>
 
-            <div class="ref-table overflow-x-scroll lg:overflow-auto">
-              <table class="w-full">
-                <thead class="bg-[#2E2B70] text-white font-bold text-center">
-                  <tr class="w-full">
-                    <th class="w-[20%] text-left">PRODUCTS</th>
-                    <th>UOM</th>
-                    <th>HSN<br /> Code</th>
-                    <th>Tariff<br /> Item</th>
-                    <th>BASIC<br /> Rate</th>
-                    <th>SGST/CGST/<br />IGST %</th>
-                    <th>SGST/CGST/<br />IGST AMT</th>
-                    <th>Total<br /> Amount</th>
-                    <th>CHANGE IN BASIC</th>
-                  </tr>
-                </thead>
-
-                <tr
-                  class="text-[#2C2C2C] bg-[#DEE5FF] p-1 font-bold text-lg text-center"
-                >
-                  <th colspan="9"> Ex Mumbai Refinery</th>
+              <tbody class="text-center">
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
                 </tr>
 
-                <tbody class="text-center">
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-
-                  <!-- temp data for testing -->
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                  <tr>
-                    <td class="text-left bg-[#FFDDC9]">BENZENE</td>
-                    <td>MT</td>
-                    <td>2902</td>
-                    <td>29022000</td>
-                    <td>67,500.00</td>
-                    <td>18.00%</td>
-                    <td>12,150.00</td>
-                    <td>76,650.00</td>
-                    <td>2,000.00</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+                <!-- temp data for testing -->
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+                <tr>
+                  <td class="text-left bg-[#FFDDC9]">BENZENE</td>
+                  <td>MT</td>
+                  <td>2902</td>
+                  <td>29022000</td>
+                  <td>67,500.00</td>
+                  <td>18.00%</td>
+                  <td>12,150.00</td>
+                  <td>76,650.00</td>
+                  <td>2,000.00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- source section  -->
-      <section class="source bg-gradient-to-r from-[#242D4A] to-[#4B5EAA]">
-        <div class="source container-1">
-          <div
-            class="py-10 md:py-16 gap-10 flex flex-col-reverse md:flex-row justify-between items-center text-white"
-          >
-            <div class="md:w-[65%] lg:w-[65%] xl:w-auto">
-              <h2
-                class="font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[56px] mb-6 text-center md:text-left"
-              >
-                Source the high-quality products<br class="hidden xl:block" />
-                 from Mignesh Global!
-              </h2>
-              <button
-                class="mt-6 text-sm sm:text-base flex justify-evenly gap-2 p-2 sm:h-11 sm:w-full sm:max-w-[240px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
-              >
-                <span> CHECK PRODUCTS NOW</span>
-                <img src="/images/right_arrow.png" alt=">" />
-              </button>
-            </div>
-            <div class="w-[70%] md:w-auto flex items-center justify-center">
-              <img src="/images/drum_1.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- team section  -->
-      <section class="team">
-        <div class="team container-1 my-10 sm:my-20">
-          <div class="head text-center md:text-left">
-            <h6
-              class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7"
-            >
-              Meet
-            </h6>
+    <!-- source section  -->
+    <section class="source bg-gradient-to-r from-[#242D4A] to-[#4B5EAA]">
+      <div class="source container-1">
+        <div
+          class="py-10 md:py-16 gap-10 flex flex-col-reverse md:flex-row justify-between items-center text-white"
+        >
+          <div class="md:w-[65%] lg:w-[65%] xl:w-auto">
             <h2
-              class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
+              class="font-bold text-3xl sm:text-4xl lg:text-5xl lg:leading-[56px] mb-6 text-center md:text-left"
             >
-              Our TEAM
+              Source the high-quality products<br class="hidden xl:block" />
+               from Mignesh Global!
             </h2>
+            <button
+              class="mt-6 text-sm sm:text-base flex justify-evenly gap-2 p-2 sm:h-11 sm:w-full sm:max-w-[240px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
+            >
+              <span> CHECK PRODUCTS NOW</span>
+              <img src="/images/right_arrow.png" alt=">" />
+            </button>
+          </div>
+          <div class="w-[70%] md:w-auto flex items-center justify-center">
+            <img src="/images/drum_1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- team section  -->
+    <section class="team">
+      <div class="team container-1 my-10 sm:my-20">
+        <div class="head text-center md:text-left">
+          <h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
+            Meet
+          </h6>
+          <h2
+            class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
+          >
+            Our TEAM
+          </h2>
+        </div>
+
+        <div
+          class="members text-center flex gap-12 md:gap-10 items-center flex-col md:flex-row justify-evenly my-10 mx-5 m-auto"
+        >
+          <div class="t1 md:max-w-[276px]">
+            <div class="1 w-[80%] m-auto md:w-fit bg-[#E98135] rounded-full">
+              <img src="/images/team_1.png" alt="" />
+            </div>
+            <h3 class="text-[#48389C] text-lg font-bold mt-3">
+              Arjun N. Pachani
+            </h3>
+            <p class="md:mb-3">CEO</p>
+            <div class="social m-auto flex gap-5 justify-center items-center">
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/facebook.svg" alt="" />
+              </a>
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/linkdin.svg" alt="" />
+              </a>
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/twitter.svg" alt="" />
+              </a>
+            </div>
           </div>
 
-          <div
-            class="members text-center flex gap-12 md:gap-10 items-center flex-col md:flex-row justify-evenly my-10 mx-5 m-auto"
-          >
-            <div class="t1 md:max-w-[276px]">
-              <div class="1 w-[80%] m-auto md:w-fit bg-[#E98135] rounded-full">
-                <img src="/images/team_1.png" alt="" />
-              </div>
-              <h3 class="text-[#48389C] text-lg font-bold mt-3">
-                Arjun N. Pachani
-              </h3>
-              <p class="md:mb-3">CEO</p>
-              <div class="social m-auto flex gap-5 justify-center items-center">
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/facebook.svg" alt="" />
-                </a>
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/linkdin.svg" alt="" />
-                </a>
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/twitter.svg" alt="" />
-                </a>
-              </div>
+          <div class="t1 max-w-[276px]">
+            <div class="1 w-[80%] m-auto md:w-fit bg-[#E98135] rounded-full">
+              <img src="/images/team_1.png" alt="" />
             </div>
-
-            <div class="t1 max-w-[276px]">
-              <div class="1 w-[80%] m-auto md:w-fit bg-[#E98135] rounded-full">
-                <img src="/images/team_1.png" alt="" />
-              </div>
-              <h3 class="text-[#48389C] text-lg font-bold mt-3">
-                Arjun N. Pachani
-              </h3>
-              <p class="md:mb-3">CEO</p>
-              <div class="social m-auto flex gap-5 justify-center items-center">
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/facebook.svg" alt="" />
-                </a>
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/linkdin.svg" alt="" />
-                </a>
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/twitter.svg" alt="" />
-                </a>
-              </div>
+            <h3 class="text-[#48389C] text-lg font-bold mt-3">
+              Arjun N. Pachani
+            </h3>
+            <p class="md:mb-3">CEO</p>
+            <div class="social m-auto flex gap-5 justify-center items-center">
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/facebook.svg" alt="" />
+              </a>
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/linkdin.svg" alt="" />
+              </a>
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/twitter.svg" alt="" />
+              </a>
             </div>
+          </div>
 
-            <div class="t1 max-w-[276px]">
-              <div class="1 w-[80%] m-auto md:w-fit bg-[#E98135] rounded-full">
-                <img src="/images/team_1.png" alt="" />
-              </div>
-              <h3 class="text-[#48389C] text-lg font-bold mt-3">
-                Arjun N. Pachani
-              </h3>
-              <p class="md:mb-3">CEO</p>
-              <div class="social m-auto flex gap-5 justify-center items-center">
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/facebook.svg" alt="" />
-                </a>
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/linkdin.svg" alt="" />
-                </a>
-                <a href="" class="w-fit cursor-pointer">
-                  <img src="/images/twitter.svg" alt="" />
-                </a>
-              </div>
+          <div class="t1 max-w-[276px]">
+            <div class="1 w-[80%] m-auto md:w-fit bg-[#E98135] rounded-full">
+              <img src="/images/team_1.png" alt="" />
+            </div>
+            <h3 class="text-[#48389C] text-lg font-bold mt-3">
+              Arjun N. Pachani
+            </h3>
+            <p class="md:mb-3">CEO</p>
+            <div class="social m-auto flex gap-5 justify-center items-center">
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/facebook.svg" alt="" />
+              </a>
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/linkdin.svg" alt="" />
+              </a>
+              <a href="" class="w-fit cursor-pointer">
+                <img src="/images/twitter.svg" alt="" />
+              </a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- faq section  -->
-      <section class="faq bg-[#5A6079] text-white">
-        <div class="faq container-1 mt-10 sm:mt-20">
-          <div class="head text-center md:text-left py-10 sm:py-20">
-            <h6
-              class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7"
-            >
-              FAQs
-            </h6>
-            <h2
-              class="text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
-            >
-              Frequently Asked Questions
-            </h2>
-          </div>
-
-          <div
-            class="grid md:grid-cols-2 justify-between gap-10 md:gap-8 xl:gap-16 pb-10 md:pb-20"
-          >
-            <Faq
-              source="/images/faq_1.svg"
-              ,
-              head="Does Mignesh Global Pvt Ltd have a minimum order requirement for their products?"
-              ,
-              body="Yes, Mignesh Global Pvt Ltd has a minimum order requirement. You need to place an order of at least 20,000kg or 20,000 liters on our website."
-            />
-
-            <Faq
-              source="/images/faq_2.svg"
-              ,
-              head="Do you have imported products on your website?"
-              ,
-              body="Yes, we have a wide range of imported products available on our platforms. As per your unique requirements, you can reach out to us, and we will help you out!"
-            />
-
-            <Faq
-              source="/images/faq_3.svg"
-              ,
-              head="Can I check the samples of your product before ordering?"
-              ,
-              body="Yes, you can surely check the samples of the product before ordering. We can send you some of the pictures and report for the products via Whatsapp or email. Also - If you want, we can even send the sample to you before placing an order."
-            />
-
-            <Faq
-              source="/images/faq_4.svg"
-              ,
-              head="How do you ensure the seamless distribution of our products?"
-              ,
-              body="Yes, we have a wide range of imported products available on our platforms. As per your unique requirements, you can reach out to us, and we will help you out!  "
-            />
-
-            <Faq
-              source="/images/faq_5.svg"
-              ,
-              head="Which payment methods do you accept at Mignesh Global Pvt Ltd?"
-              ,
-              body="Mignesh Global Pvt Ltd accepts payment through various modes, including direct bank transfer, credit card, and debit card."
-            />
-
-            <Faq
-              source="/images/faq_6.svg"
-              ,
-              head="How much time does it take to deliver my products? "
-              ,
-              body="The time to deliver your products is based on the unloading location and distance. In general, it would take around 1 to 7 days to deliver your products. Our logistics company ensures quick delivery due to our strong distribution channel. "
-            />
-          </div>
+    <!-- faq section  -->
+    <section class="faq bg-[#5A6079] text-white">
+      <div class="faq container-1 mt-10 sm:mt-20">
+        <div class="head text-center md:text-left py-10 sm:py-20">
+          <h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
+            FAQs
+          </h6>
+          <h2 class="text-2xl sm:text-[32px] md:leading-7 font-bold uppercase">
+            Frequently Asked Questions
+          </h2>
         </div>
-      </section>
-    
+
+        <div
+          class="grid md:grid-cols-2 justify-between gap-10 md:gap-8 xl:gap-16 pb-10 md:pb-20"
+        >
+          <Faq
+            source="/images/faq_1.svg"
+            ,
+            head="Does Mignesh Global Pvt Ltd have a minimum order requirement for their products?"
+            ,
+            body="Yes, Mignesh Global Pvt Ltd has a minimum order requirement. You need to place an order of at least 20,000kg or 20,000 liters on our website."
+          />
+
+          <Faq
+            source="/images/faq_2.svg"
+            ,
+            head="Do you have imported products on your website?"
+            ,
+            body="Yes, we have a wide range of imported products available on our platforms. As per your unique requirements, you can reach out to us, and we will help you out!"
+          />
+
+          <Faq
+            source="/images/faq_3.svg"
+            ,
+            head="Can I check the samples of your product before ordering?"
+            ,
+            body="Yes, you can surely check the samples of the product before ordering. We can send you some of the pictures and report for the products via Whatsapp or email. Also - If you want, we can even send the sample to you before placing an order."
+          />
+
+          <Faq
+            source="/images/faq_4.svg"
+            ,
+            head="How do you ensure the seamless distribution of our products?"
+            ,
+            body="Yes, we have a wide range of imported products available on our platforms. As per your unique requirements, you can reach out to us, and we will help you out!  "
+          />
+
+          <Faq
+            source="/images/faq_5.svg"
+            ,
+            head="Which payment methods do you accept at Mignesh Global Pvt Ltd?"
+            ,
+            body="Mignesh Global Pvt Ltd accepts payment through various modes, including direct bank transfer, credit card, and debit card."
+          />
+
+          <Faq
+            source="/images/faq_6.svg"
+            ,
+            head="How much time does it take to deliver my products? "
+            ,
+            body="The time to deliver your products is based on the unloading location and distance. In general, it would take around 1 to 7 days to deliver your products. Our logistics company ensures quick delivery due to our strong distribution channel. "
+          />
+        </div>
+      </div>
+    </section>
 
     <script src="../../src/js/client_slide.js"></script>
   </main>

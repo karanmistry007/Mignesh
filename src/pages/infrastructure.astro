@@ -1,0 +1,256 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Infra_Card from "../components/Infra_Card.astro";
+
+import { Image } from "astro:assets";
+import infra_banner from "../../public/Group 50.png";
+import infra_workflow from "../../public/infra-workflow1.svg";
+import manufacturing from "../../public/manufacturing.svg";
+import equipment from "../../public/equipment.svg";
+import strategic from "../../public/strategic.svg";
+import storing from "../../public/storing.svg";
+import lubricant from "../../public/lubricant.svg";
+import logistics from "../../public/logistics.svg";
+import infra_detail from "../../public/infra-2.svg";
+---
+
+<Layout title="Infrastructure">
+  <main>
+    <!-- infrastructure-Banner -->
+
+    <!-- <section class="text-gray-600 body-font bg-gradient-to-r from-[#252d4b] to-[#4b5eaa] ">
+        <div class=" infra-banner sm:bg-right bg-left-bottom item-center flex h-[430px] w-full">
+          <div class="container w-[90%] sm:w-full sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto">
+            <p class="md:text-3xl sm:text-2xl text-xl text-white xl:w-1/2 lg:w-2/5 w-full"><span class="uppercase font-semibold">Mignesh Global </span> is backed by robust Infrastructure & efficient logistics!</p>
+          </div>
+        </div>
+      </section> -->
+
+    <section
+      class="text-gray-600 body-font bg-gradient-to-r from-[#252d4b] to-[#4b5eaa] section-with-background"
+    >
+      <div
+        class="infra-banner sm:bg-right bg-left-bottom item-center flex h-[430px] w-full"
+      >
+        <div
+          class="container-1 self-center"
+        >
+          <p
+            class="md:text-3xl sm:text-2xl text-xl text-white xl:w-1/2 lg:w-2/5 w-full"
+          >
+            <span class="uppercase font-semibold">Mignesh Global</span> is
+            backed by robust Infrastructure & efficient logistics!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="text-gray-600 body-font bg-gradient-to-r from-[#252d4b] to-[#4b5eaa] ">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+          <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+            <p class="md:text-3xl sm:text-2xl text-xl text-white xl:w-1/2 lg:w-2/5 w-full"><span class="uppercase font-semibold">Mignesh Global </span> is backed by robust Infrastructure & efficient logistics!</p>
+
+          </div>
+          <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+            <Image alt="infra-details" src={infra_banner} class="object-cover object-center rounded"/>
+
+
+          </div>
+        </div>
+      </section> -->
+
+    <!-- section-2 -->
+
+    <section class="text-gray-600 body-font">
+      <div
+        class="container-1 md:py-24 py-14"
+      >
+        <div class="flex xl:flex-row flex-col mb-24">
+          <div class="xl:w-1/2 w-full mb-10 xl:mb-0">
+            <div class="head-txt">
+            <h6
+              class=""
+            >
+            Get your hands on the best-quality
+          </h6>
+              <h2 class="max-w-[520px]">
+              Bitumen, Bitumen Emulsion, Base Oil, and Fuel Oil Products from
+              Mignesh Global.
+            </h2>
+          </div>
+            <p class="xl:w-3/4 w-full text-base tracking-[0.16px]">
+              Robust Infrastructure is at the core of Mignesh Global to deliver
+              best-in-class high-quality end products to our clients. We have a
+              full-fledged infrastructure facility to ensure seamless storage,
+              supply and management of all the products, such as Bitumen,
+              Bitumen Emulsion, Base Oil and Fuel Oil.
+            </p>
+          </div>
+          <div
+            class="lg:flex-grow xl:w-1/2 w-full xl:pl-8 pl-0 flex flex-col md:items-start md:text-left items-center text-center"
+          >
+            <Image
+              alt="infra-details"
+              src={infra_detail}
+              class="object-cover object-center rounded"
+            />
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col sm:text-start text-center w-full lg:mb-16 mb-10"
+        >
+          <h1
+            class="xl:text-3xl lg:text-2xl text-xl font-medium title-font text-[#48389C] xl:w-3/4 lg:w-5/6 w-full"
+          >
+            Our Infrastructure is a testament to our commitment to delivering
+            top-notch products and services efficiently and effectively.
+          </h1>
+        </div>
+        
+
+        <div class="flex flex-wrap">
+          <Infra_Card
+            title="Manufacturing Plant Facility"
+            data="We have set up our very own manufacturing plant in Baroda to ensure quick, seamless and high-quality manufacturing of diverse products."
+            img={manufacturing}
+          />
+
+          <Infra_Card
+            title="State-of-the-art storage facility"
+            data="Mignesh Global has a huge storage facility with a capacity of 5000 metric tons, enabling us to stockpile a wide range of products in large quantities."
+            img={storing}
+          />
+
+          <Infra_Card
+            title="Lubricant material manufacturing"
+            data="We even have a lubricant material manufacturing facility, which strengthens our capabilities to cater to the lubricant industry's diverse needs."
+            img={lubricant}
+          />
+
+          <Infra_Card
+            title="Availability of necessary equipment"
+            data="To ensure timely and seamless delivery of products, we maintain a dedicated fleet of 8 trucks and other required equipment."
+            img={equipment}
+          />
+
+          <Infra_Card
+            title="Strategic presence across the country"
+            data="Mignesh Global has established a strategic presence across various ports, providing us with excellent accessibility to multiple regions."
+            img={strategic}
+          />
+
+          <Infra_Card
+            title="Our own Logistics Company"
+            data="To ensure faster and more efficient delivery of all the required products, such as Bitumen, Bitumen Emulsion, Base Oil & Fuel Oil, we have set up our own Logistics company(Mignesh Logistics)."
+            img={logistics}
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- infrastructure-Workflow -->
+
+    <section class="text-gray-600 body-font bg-[#F9F9FB]">
+      <div
+        class="container w-[90%] sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl m-auto flex xl:px-28 px-0 md:py-24 py-14 md:flex-row flex-col items-center"
+      >
+        <div class="md:w-1/2 w-full mb-10 md:mb-0">
+          <Image
+            alt="hero"
+            src={infra_workflow}
+            class="object-cover object-center rounded"
+          />
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 w-full lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+        >
+          <div>
+            <p class="mb-8 text-base tracking-[0.16px]">
+              Mignesh Global’s Infrastructure has been strategically designed to
+              enhance efficiency and reliability in all aspects of our
+              operations. From production to storage and distribution, we have
+              highly optimized our processes to deliver exceptional service
+              consistently.
+            </p>
+            <p
+              class="font-semibold sm:text-xl text-lg mb-8 text-[#2E2D6F] tracking-[0.2px]"
+            >
+              Delivering a Diverse Range of High-quality Products with our
+              Robust Infrastructure and experienced team.
+            </p>
+          </div>
+          <div class="flex w-full md:justify-start justify-center items-end">
+            <button
+              class="inline-flex sm:text-xl text-base text-white bg-[#E98135] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg uppercase"
+              ><a href="#" class="flex flex-row"
+                ><span> Contact Now!</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="9"
+                  height="13"
+                  viewBox="0 0 9 13"
+                  fill="none"
+                  class="ml-10 my-2"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.917 12.009L0 10.122L4.182 6.005L0 1.887L1.917 0L8.014 6.005L1.917 12.009Z"
+                    fill="white"></path>
+                </svg></a
+              ></button
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
+<style>
+  .infra-banner {
+    background-image: url(../../public/Group 50.png);
+
+    background-repeat: no-repeat;
+    max-height: 430px;
+  }
+  /* .infra-banner div{
+    height:430px;
+  }
+
+  @media screen and (max-width: 1280px) {
+  .infra-banner {
+      max-height:344px;
+  }
+  .infra-banner div{
+    height:344px;
+  }
+  .infra-img{
+  width:800px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .infra-banner {
+      max-height:300px;
+  }
+  .infra-banner div{
+    height:300px;
+  }
+  .infra-img{
+      width:697px;
+}
+}
+
+@media screen and (max-width: 798px) {
+  .infra-banner {
+      max-height:860px;
+  }
+  .infra-banner div{
+    height:739px;
+  }
+  .infra-img{
+      height:100%;
+}
+} */
+</style>
