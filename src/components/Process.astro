@@ -1,0 +1,23 @@
+---
+interface Props {
+	title: string;
+	body: string;
+    source1: string;
+    source2: string;
+}
+
+const { title, source1, source2, body } = Astro.props;
+---
+
+<div class="max-w-[304px] flex flex-col items-center gap-3 border-l-4 lg:border-0 p-5 lg:p-0 w-[80%] lg:w-auto relative m-auto lg:m-0">
+    <img class="lg:w-[160px] xl:w-[170px] 2xl:w-auto" src={source1} alt="">
+  <img class="absolute left-[-18px] top-[115px] lg:static" src={source2} alt="">
+  <div class="text-center">
+    <h3 class="text-lg font-bold text-[#48389C]">
+      {title} 
+    </h3>
+    <p class="text-[#2C2C2C]">
+      {body}
+    </p>
+  </div>
+</div>

@@ -11,6 +11,7 @@ const { source, body } = Astro.props;
     <div class="w-[50%] md:w-[60%] lg:w-fit m-auto">
         <img src={source} alt="why">
     </div>
+    <p>
         <Fragment set:html={body}/>
     </p>
 </div>
