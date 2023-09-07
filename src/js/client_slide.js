@@ -78,3 +78,11 @@ function slide3() {
 btn_1.addEventListener("click", slide1);
 btn_2.addEventListener("click", slide2);
 btn_3.addEventListener("click", slide3);
+
+
+const calendarIcon = document.querySelector('.calendar-icon');
+const datePicker = document.querySelector('#date-picker');
+
+// calendarIcon.addEventListener('click', () => {
+//     datePicker.open();
+// });
