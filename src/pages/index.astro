@@ -9,7 +9,76 @@ import Process from "../components/Process.astro";
 <Layout title="Mignesh Global">
   <main>
     <!-- slider section  -->
-    <section class="slider bg-[#D9D9D9] relative h-screen sm:sm:h-auto lg:h-auto">
+	<section class="slider bg-[#D9D9D9] relative overflow-hidden">
+		<div class="slide-1 bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative">
+			<img class="h-full object-cover object-left md:hidden" src="/images/slide_1_1.png" alt="">
+			<img class="hidden md:block h-full object-cover object-left md:ml-auto" src="/images/slide_1.png" alt="">
+
+      <div class="absolute max-w-[180px] bottom-5 right-5 w-[35%] md:left-[8vw] md:bottom-10 lg:bottom-20 lg:max-w-[300px] lg:w-auto xl:left-[15vw] 2xl:left-[33vw]">
+        <img src="/images/drum.png" alt="">
+      </div>
+		</div>
+
+    <div class="slide-2 hidden  bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative">
+			<img class="h-full object-cover object-left md:hidden" src="/images/slide_2_1.png" alt="">
+			<img class="hidden md:block h-full object-cover object-left md:ml-auto" src="/images/slide_2.png" alt="">
+
+      <div class="hidden md:block absolute max-w-[200px] bottom-5 right-5 w-[35%] md:left-[8vw] md:bottom-10 lg:bottom-20 lg:max-w-[300px] lg:w-auto xl:left-[15vw] 2xl:left-[33vw]">
+        <img src="/images/truck.png" alt="">
+      </div>
+		</div>
+
+    <div class="slide-3 hidden  bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative">
+			<img class="h-full object-cover object-left md:hidden" src="/images/slide_3_1.png" alt="">
+			<img class="hidden md:block h-full object-cover object-left md:ml-auto" src="/images/slide_3.png" alt="">
+
+      <div class="hidden md:block absolute max-w-[120px] bottom-5 right-5 w-[35%] md:left-[8vw] md:bottom-10 lg:bottom-20 lg:max-w-[225px] lg:w-auto xl:left-[15vw] 2xl:left-[33vw]">
+        <img src="/images/oil.png" alt="">
+      </div>
+		</div>
+    
+
+		<div class="txt md:w-full md:absolute left-0 top-0 ">
+			<div class="caption w-fit md:w-auto container-1 py-6 md:py-16">
+			  <h2
+				class="text-2xl md:text-[40px] md:leading-[48px] text-[#48389C] uppercase md:w-[386px]"
+			  >
+				<span class="normal-case">
+				  Welcome to
+				  <br />
+				</span>
+				<b class="text-3xl md:text-5xl">Mignesh</b> Global!
+			  </h2>
+			  <p
+				class="text-sm md:text-lg leading-6 md:w-[414px] text-[#2C2C2C] my-5"
+			  >
+				Your one-stop platform to purchase high-quality Infrasture &
+				Lubricant products such as Bitumen, Emulsion, Base Oil, Furnace Oil,
+				etc.
+			  </p>
+			  <button
+				class="text-base flex justify-evenly h-11 w-[209px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
+			  >
+				<span> CHECK PRODUCTS</span>
+				<img src="/images/right_arrow.png" alt=">" />
+			  </button>
+			</div>
+		</div>
+
+
+
+      <div class="btns flex gap-3 flex-col h-[50vh] md:h-full left-4 justify-center items-center absolute top-0 md:left-5">
+        <button class="btn-1 bg-[#E98135] w-[5px] h-[30px] rounded-[3px]"></button>
+        <button class="btn-2 bg-[#2E2C7090] w-[5px] h-[30px] rounded-[3px]" ></button>
+        <button class="btn-3 bg-[#2E2C7090] w-[5px] h-[30px] rounded-[3px]"></button>
+      </div>
+
+      
+	</section>
+
+
+
+    <section class="slider bg-[#D9D9D9] relative h-screen sm:sm:h-auto lg:h-auto hidden">
       
       
       <div class="flex w-full justify-between h-[60vh] sm:h-[400px] lg:h-[701px]">
@@ -61,7 +130,7 @@ import Process from "../components/Process.astro";
         class="container-1 flex flex-col md:flex-row justify-between items-center py-20"
       >
         <div class="item-1 max-w-[524px] md:w-[50%] lg:w-[40%]">
-          <img class="w-[50%] md:w-auto" src="/images/why_main.png" alt="" />
+          <img class="" src="/images/why_main.png" alt="" />
           <p class="text-2xl sm:text-[32px] mt-8">
             Get the best quality products at
           </p>
@@ -187,9 +256,9 @@ import Process from "../components/Process.astro";
           >
             ordering process!
           </h2>
-
+        </div>
           <div
-            class="lg:bg-[url(/images/union.png)] bg-no-repeat bg-contain xl:mx-20 gap-5"
+            class="lg:bg-[url(/images/union.png)] bg-no-repeat bg-contain xl:mx-20 gap-5 my-5"
           >
             <div
               class="lg:flex flex-col lg:flex-row justify-center relative lg:bottom-[20px] xl:bottom-[10px] 2xl:bottom-[43px] lg:left-[100px] xl:left-0"
@@ -241,7 +310,7 @@ import Process from "../components/Process.astro";
               />
             </div>
           </div>
-        </div>
+
       </div>
     </section>
 
@@ -320,24 +389,25 @@ import Process from "../components/Process.astro";
 
         <div class="my-12">
           <div
-            class="thead bg-[#5A6079] text-white flex flex-col md:flex-row justify-between p-[14px] border-x border-white"
+            class="thead bg-[#5A6079] text-white flex flex-col md:flex-row justify-between gap-2.5 p-[14px]  border-white"
           >
-            <h3 class="text-2xl md:leading-6 font-bold">
+            <h3 class="text-xl md:text-2xl md:leading-6 font-bold">
               Bharat Petroleum Corporation Limited
             </h3>
-            <button
-              class="font-semibold text-base flex items-center md:items-start lg:items-center gap-2.5"
+            <div
+            class="font-semibold text-base flex items-center md:items-start lg:items-center gap-2.5"
             >
-              <img class="" src="/images/calender_icon.svg" alt="" />
+            <input class="bg-transparent border-0 outline-0 text-white text-lg flex flex-[0_1_23px]" type="date" name="" id="" placeholder=" ">
+              <!-- <img class="" src="/images/calender_icon.svg" alt="" /> -->
               <span> Last Updated on August 1, 2023</span>
-            </button>
+            </div>
           </div>
 
           <div class="ref-table overflow-x-scroll lg:overflow-auto">
             <table class="w-full">
               <thead class="bg-[#2E2B70] text-white font-bold text-center">
-                <tr class="w-full">
-                  <th class="w-[20%] text-left">PRODUCTS</th>
+                <tr class="w-full border-x-0">
+                  <th class="w-[20%] text-left border-l-0">PRODUCTS</th>
                   <th>UOM</th>
                   <th>HSN<br /> Code</th>
                   <th>Tariff<br /> Item</th>
@@ -598,10 +668,10 @@ import Process from "../components/Process.astro";
         </div>
 
         <div
-          class="grid md:grid-cols-2 justify-between gap-10 md:gap-8 xl:gap-16 pb-10 md:pb-20"
+          class="grid md:grid-cols-2 justify-between gap-8 md:gap-4 xl:gap-16 pb-10 md:pb-20"
         >
           <Faq
-            source="/images/faq_1.svg"
+            source="/images/1.svg"
             ,
             head="Does Mignesh Global Pvt Ltd have a minimum order requirement for their products?"
             ,
@@ -609,7 +679,7 @@ import Process from "../components/Process.astro";
           />
 
           <Faq
-            source="/images/faq_2.svg"
+            source="/images/2.svg"
             ,
             head="Do you have imported products on your website?"
             ,
@@ -617,7 +687,7 @@ import Process from "../components/Process.astro";
           />
 
           <Faq
-            source="/images/faq_3.svg"
+            source="/images/3.svg"
             ,
             head="Can I check the samples of your product before ordering?"
             ,
@@ -625,7 +695,7 @@ import Process from "../components/Process.astro";
           />
 
           <Faq
-            source="/images/faq_4.svg"
+            source="/images/4.svg"
             ,
             head="How do you ensure the seamless distribution of our products?"
             ,
@@ -633,7 +703,7 @@ import Process from "../components/Process.astro";
           />
 
           <Faq
-            source="/images/faq_5.svg"
+            source="/images/5.svg"
             ,
             head="Which payment methods do you accept at Mignesh Global Pvt Ltd?"
             ,
@@ -641,7 +711,7 @@ import Process from "../components/Process.astro";
           />
 
           <Faq
-            source="/images/faq_6.svg"
+            source="/images/6.svg"
             ,
             head="How much time does it take to deliver my products? "
             ,
@@ -655,6 +725,36 @@ import Process from "../components/Process.astro";
   </main>
 
   <style is:global>
+    /* animation slider  */
+    .slider .btn-1,.slider .btn-2, .slider .btn-3{
+      transition: all 0.3s ease-in-out;
+    }
+
+    .slider .slide-1, .slider .slide-2 ,.slider .slide-3{
+      animation: from-left 0.5s ease-in-out
+    }
+    @keyframes from-left{
+      0%{
+        transform:translateX(-100%) scale(0);
+        opacity:0;
+
+
+      }
+      100%{
+        transform:translateX(0%) scale(1);
+        opacity:1;
+      }
+    }
+
+    @keyframes to-right{
+      0%{
+        transform:translateX(0%);
+      }
+      100%{
+        transform:translateX(100%);
+      }
+    }
+
     /* Slider */
     .slick-slide {
       margin: 0px 10px;
@@ -691,5 +791,26 @@ import Process from "../components/Process.astro";
       border-left: 1px solid white;
       border-right: 1px solid white;
     }
+  </style>
+  <style>
+        input[type=date]::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+    display: none;
+    }
+    input[type=date]::-webkit-datetime-edit-month-field{
+        -webkit-appearance: none;
+        display: none;
+    }
+    input[type=date]::-webkit-datetime-edit-day-field {
+        -webkit-appearance: none;
+        display: none;
+    }
+    input[type=date]::-webkit-datetime-edit-year-field {
+        -webkit-appearance: none;
+        display: none;
+    }
+    input {
+    color-scheme: dark;
+  }
   </style>
 </Layout>

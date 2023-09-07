@@ -19,58 +19,62 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 3,
         },
-        
       },
       {
         breakpoint: 580,
         settings: {
           slidesToShow: 2,
         },
-        
       },
       {
-        breakpoint: 400,
+        breakpoint: 350,
         settings: {
           slidesToShow: 1,
         },
-        
       },
     ],
   });
 });
 
-// function clientSlider(){
-//     var slide1=document.querySelector(".main-slide").querySelector(".slide-1");
-//     var slide2=document.querySelector(".main-slide").querySelector(".slide-2");
-//     slide1.style.transform==="translateX(0%)"
-//     // console.log (slide1);
-//     // console.log (slide2);
+// animation for slider1
+var slide_1 = document.querySelector(".slider").querySelector(".slide-1");
+var slide_2 = document.querySelector(".slider").querySelector(".slide-2");
+var slide_3 = document.querySelector(".slider").querySelector(".slide-3");
 
-//     function slideDisplay(){
-//         if (slide2.classList.contains("trans_left")||(slide2.classList.contains("trans_right"))){
+var btn_1 = document.querySelector(".slider").querySelector(".btn-1");
+var btn_2 = document.querySelector(".slider").querySelector(".btn-2");
+var btn_3 = document.querySelector(".slider").querySelector(".btn-3");
 
-//             //for slide 2
+function slide1() {
+  slide_1.classList.remove("hidden");
+  slide_2.classList.add("hidden");
+  slide_3.classList.add("hidden");
 
-//             //exit animation
+  btn_1.style.background = "#E98135";
+  btn_2.style.background = "#2E2C7090";
+  btn_3.style.background = "#2E2C7090";
+}
 
-//                 // slide1.classList.remove("hidden");
+function slide2() {
+  slide_2.classList.remove("hidden");
+  slide_1.classList.add("hidden");
+  slide_3.classList.add("hidden");
 
-//             // slide1.style.transform="translateX(-100%)"
-//             // slide2.style.transform="translateX(0%)"
-//         } else {
-//             //for slide 1
+  btn_2.style.background = "#E98135";
+  btn_1.style.background = "#2E2C7090";
+  btn_3.style.background = "#2E2C7090";
+}
 
-//             //exit animation
+function slide3() {
+  slide_3.classList.remove("hidden");
+  slide_1.classList.add("hidden");
+  slide_2.classList.add("hidden");
 
-//                 // slide2.classList.remove("hidden");
-//             // slide2.classList.remove("trans_left");
+  btn_3.style.background = "#E98135";
+  btn_2.style.background = "#2E2C7090";
+  btn_1.style.background = "#2E2C7090";
+}
 
-//             // slide2.style.transform="translateX(-100%)"
-//             // slide1.style.transform="translateX(0%)"
-//         }
-//     }
-//     setInterval(slideDisplay, 3600);
-
-// }
-
-// clientSlider();
+btn_1.addEventListener("click", slide1);
+btn_2.addEventListener("click", slide2);
+btn_3.addEventListener("click", slide3);
