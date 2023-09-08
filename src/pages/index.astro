@@ -10,32 +10,34 @@ import Process from "../components/Process.astro";
   <main>
     <!-- slider section  -->
 	<section class="slider bg-[#D9D9D9] relative overflow-hidden">
-		<div class="slide-1 bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative">
-			<img class="h-full object-cover object-left md:hidden" src="/images/slide_1_1.png" alt="">
-			<img class="hidden md:block h-full object-cover object-left md:ml-auto" src="/images/slide_1.png" alt="">
+		
+    <div class="slide-1 bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0">
+			<img class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden" src="/images/slide_1_1.png" alt="">
+			<img class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0" src="/images/slide_1.png" alt="">
 
-      <div class="absolute max-w-[180px] bottom-5 right-5 w-[35%] md:left-[8vw] md:bottom-10 lg:bottom-20 lg:max-w-[300px] lg:w-auto xl:left-[15vw] 2xl:left-[33vw]">
+      <div class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto  md:bottom-10 lg:bottom-20 lg:max-w-[240px] lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]">
         <img src="/images/drum.png" alt="">
       </div>
 		</div>
 
-    <div class="slide-2 hidden  bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative">
-			<img class="h-full object-cover object-left md:hidden" src="/images/slide_2_1.png" alt="">
-			<img class="hidden md:block h-full object-cover object-left md:ml-auto" src="/images/slide_2.png" alt="">
+    <div class="slide-2 hidden bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0">
+			<img class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden" src="/images/slide_2_1.png" alt="">
+			<img class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0" src="/images/slide_2.png" alt="">
 
-      <div class="hidden md:block absolute max-w-[200px] bottom-5 right-5 w-[35%] md:left-[8vw] md:bottom-10 lg:bottom-20 lg:max-w-[300px] lg:w-auto xl:left-[15vw] 2xl:left-[33vw]">
+      <div class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto  md:bottom-10 lg:bottom-20 lg:max-w-[240px] lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]">
         <img src="/images/truck.png" alt="">
       </div>
 		</div>
 
-    <div class="slide-3 hidden  bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative">
-			<img class="h-full object-cover object-left md:hidden" src="/images/slide_3_1.png" alt="">
-			<img class="hidden md:block h-full object-cover object-left md:ml-auto" src="/images/slide_3.png" alt="">
+    <div class="slide-3 hidden bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0">
+			<img class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden" src="/images/slide_3_1.png" alt="">
+			<img class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0" src="/images/slide_3.png" alt="">
 
-      <div class="hidden md:block absolute max-w-[120px] bottom-5 right-5 w-[35%] md:left-[8vw] md:bottom-10 lg:bottom-20 lg:max-w-[225px] lg:w-auto xl:left-[15vw] 2xl:left-[33vw]">
+      <div class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto  md:bottom-10 lg:bottom-20 lg:max-w-[240px] lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]">
         <img src="/images/oil.png" alt="">
       </div>
 		</div>
+
     
 
 		<div class="txt md:w-full md:absolute left-0 top-0 ">
@@ -78,49 +80,6 @@ import Process from "../components/Process.astro";
 
 
 
-    <section class="slider bg-[#D9D9D9] relative h-screen sm:sm:h-auto lg:h-auto hidden">
-      
-      
-      <div class="flex w-full justify-between h-[60vh] sm:h-[400px] lg:h-[701px]">
-        <div class="bg-[#D9D9D9] w-[auto]">
-
-        </div>
-        <div class="lg:w-[100%] xl:w-[80%] self-end">
-          <img class="w-[100%] h-[60vh] sm:h-[400px] lg:h-[701px] object-cover" src="/images/slide_1.png" alt="">
-        </div>
-      </div>
-      <div class="drum w-fit h-fit absolute bottom-20 left-[623px]">
-        <img src="/images/drum.png" alt="">
-      </div>
-
-
-      <div class="txt lg:w-full lg:absolute left-0 top-0">
-        <div class="caption w-fit lg:w-auto container-1 py-6 md:py-16">
-          <h2
-            class="text-2xl md:text-[40px] md:leading-[48px] text-[#48389C] uppercase md:w-[386px]"
-          >
-            <span class="normal-case">
-              Welcome to
-              <br />
-            </span>
-            <b class="text-3xl md:text-5xl">Mignesh</b> Global!
-          </h2>
-          <p
-            class="text-sm md:text-lg leading-6 md:w-[414px] text-[#2C2C2C] my-5"
-          >
-            Your one-stop platform to purchase high-quality Infrasture &
-            Lubricant products such as Bitumen, Emulsion, Base Oil, Furnace Oil,
-            etc.
-          </p>
-          <button
-            class="text-base flex justify-evenly h-11 w-[209px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
-          >
-            <span> CHECK PRODUCTS</span>
-            <img src="/images/right_arrow.png" alt=">" />
-          </button>
-        </div>
-      </div>
-    </section>
 
     <!-- Why choose us section  -->
     <section
@@ -736,27 +695,28 @@ import Process from "../components/Process.astro";
     }
 
     .slider .slide-1, .slider .slide-2 ,.slider .slide-3{
-      animation: from-left 0.5s ease-in-out
+      animation: from-right 0.8s ease-in-out
     }
-    @keyframes from-left{
+    @keyframes from-right{
       0%{
-        transform:translateX(-100%) scale(0);
+        transform:translateX(100%);
         opacity:0;
 
 
       }
       100%{
-        transform:translateX(0%) scale(1);
+        transform:translateX(0%);
         opacity:1;
       }
     }
 
-    @keyframes to-right{
+    @keyframes to-left{
       0%{
         transform:translateX(0%);
       }
       100%{
-        transform:translateX(100%);
+        transform:translateX(-100%);
+
       }
     }
 
@@ -816,6 +776,12 @@ import Process from "../components/Process.astro";
     }
     input {
     color-scheme: dark;
+  }
+
+  @media (min-width:550px){
+    .l-650{
+      left:-130px;
+    }
   }
   </style>
 </Layout>
