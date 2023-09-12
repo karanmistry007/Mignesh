@@ -1,0 +1,259 @@
+---
+import Layout from "../layouts/Layout.astro";
+import logo from "../assets/Mignesh-logo.png";
+import slogo from "../assets/logo-small.png";
+import facebook from "../assets/facebook.png";
+import twitter from "../assets/twitter.png";
+import linkedin from "../assets/linkdin.png";
+import vector from "../assets/Vector.png";
+---
+
+<Layout title="Mignesh Global">
+    <header class="">
+        <div class="bg-[#2E2C70] w-full ">
+          <div class="container-1 text-right py-2 sm:py-[15px]">
+            <a
+              href="#"
+              class="relative text-[#FFFFFF] uppercase text-[16px]  leading-[18.75px] font-normal hover:text-[#E98135] "
+              >employee login
+            </a>
+          </div>
+        </div>
+    </header>
+    <header class=" sticky top-0 w-full z-10 bg-[#FFFFFF] ">
+      <div id="nav-header">
+        <div class="container-1 bg-[#FFFFFF] w-full py-2 sm:py-[18px]">
+          <nav>
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="#">
+                      <img src={logo.src} alt="Mignesh-Logo" class=" lg:w-auto md:w-[150px] w-[160px]">
+                    </a>
+                </div>
+                <div class="hidden lg:flex lg:gap-[32px] md:gap-[10px] md:text-[10px]">
+                    <div class="relative group ">
+                      <a href="#"  class="hover:text-[#E98135] flex gap-1 py-[12px]">
+                          ABOUT US
+                          <span>
+                            
+                          </span>
+                      </a>
+                      <div class="absolute left-[-10px] top-[30px] md:hidden bg-[#F6F4FE] text-black group-hover:block w-[210px]" style="box-shadow: 4px 4px 4px 0px rgba(0,0,0,0.15">
+                          <a href="#" class="block px-[15px] py-[12px] border-[#E4DFFC] border-b-[1px] hover:bg-[#E4DFFC]">INFRASTRUCTURE</a>
+                          <a href="#" class="block px-[15px] py-[12px] border-[#E4DFFC] border-b-[1px] hover:bg-[#E4DFFC]">OUR TEAM</a>
+                          <a href="#" class="block px-[15px] py-[12px] border-[#E4DFFC] border-b-[1px] hover:bg-[#E4DFFC]">SOCiAL RESPONSIBILITY</a>
+                      </div>
+                    </div>
+                    <a href="#" class="hover:text-[#E98135]  py-[11px]">PRODUCTS</a>
+                    <a href="#" class="hover:text-[#E98135]  py-[11px]">QUALITY</a>
+                    <a href="#" class="hover:text-[#E98135]  py-[11px]">CONTACT</a>
+                    <a href="#" class="">
+                      <button class="text-[#FFFFFF] bg-[#4B5EAA] font-medium py-[11px] px-[18px] rounded-[5px] hover:bg-[#E98135]">GET A QUOTE</button>
+                    </a>
+                </div>
+                <div class="lg:hidden mt-5">
+                    <button id="mobile-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+          </nav>
+          <div id="mobile-menu" class="hidden lg:hidden">
+              <div class="mt-2 bg-[white]">
+                  <a href="#" class="block py-2  hover:bg-[#E98135] hover:text-white rounded">ABOUT US</a>
+                  <a href="#" class="block py-2  hover:bg-[#E98135] hover:text-white rounded">PRODUCTS</a>
+                  <a href="#" class="block py-2  hover:bg-[#E98135] hover:text-white rounded">QUALITY</a>
+                  <a href="#" class="block py-2  hover:bg-[#E98135] hover:text-white rounded">CONTACT</a>
+                  <a href="#" class="block py-2">
+                    <button class="text-[#FFFFFF] bg-[#4B5EAA] font-medium py-[11px] px-[18px] rounded-[5px] hover:bg-[#E98135]">GET A QUOTE</button>
+                  </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+  <section
+    class="2 md:h-[690px] lg:h-[642px] bg-[#E4E7EC] grid md:grid-cols-2 justify-center items-center relative"
+  >
+    <div
+      class="1 bg-[url(bg_2.png)] h-auto md:h-[690px] lg:h-[642px] bg-no-repeat bg-cover bg-center w-screen md:w-full"
+    >
+    <div class="head-txt text-center md:text-left md:max-w-[524px] md:hidden p-10">
+        <h6
+          class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7"
+        >
+          Our Story
+        </h6>
+        <h2
+          class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
+        >
+          The Journey of Blending Tech for Infrastructure & Manufacturing
+          Industry!
+        </h2>
+      </div>
+    </div>
+    <div class="2 h-auto md:h-[690px] lg:h-[642px]">
+        <div class="text md:max-w-[550px] p-10">
+            <p class="md:hidden">
+              In this tech-savvy environment, where technology has been evolving
+              at a breakneck pace - shaping the face of varied industries - our
+              founders wondered why not the Infrastructure & production
+              industry.  That's when a team of experts in the infrastructure and
+              manufacturing industry came together to create something
+              extraordinary. With a burning passion and a shared vision, they
+              set out to develop a platform that would transform the industry. 
+              And so, Mignesh Global Ltd was born in 2016. We developed a
+              tech-driven ERP platform that aims to simplify the entire process
+              of getting high-quality products for infrastructure and production
+              companies in one place.  We have a range of products such as
+              Bitumen, Bitumen Emulsion, Base Oil, and Furnace Oil on this
+              platform, which everyone can avail of through an easy-to-use
+              interface and quick process.  But their success wasn't just about
+              creating a platform - it was about creating a long-lasting
+              relationship with their customers.
+            </p>
+          </div>
+    </div>
+
+    <div class="absolute top-0 left-0 hidden md:block">
+      <div class="h-[642px] w-screen py-6">
+        <div class="container-1 grid md:grid-cols-2 h-[642px] items-center md:gap-16 lg:gap-24 xl:gap-32">
+          <div class="head-txt text-center md:text-left max-w-[524px]">
+            <h6
+              class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7"
+            >
+              Our Story
+            </h6>
+            <h2
+              class="text-[#48389C] text-2xl sm:text-[32px] md:leading-7 font-bold uppercase"
+            >
+              The Journey of Blending Tech for Infrastructure & Manufacturing
+              Industry!
+            </h2>
+          </div>
+          <div class="text max-w-[550px]">
+            <p>
+              In this tech-savvy environment, where technology has been evolving
+              at a breakneck pace - shaping the face of varied industries - our
+              founders wondered why not the Infrastructure & production
+              industry.  That's when a team of experts in the infrastructure and
+              manufacturing industry came together to create something
+              extraordinary. With a burning passion and a shared vision, they
+              set out to develop a platform that would transform the industry. 
+              And so, Mignesh Global Ltd was born in 2016. We developed a
+              tech-driven ERP platform that aims to simplify the entire process
+              of getting high-quality products for infrastructure and production
+              companies in one place.  We have a range of products such as
+              Bitumen, Bitumen Emulsion, Base Oil, and Furnace Oil on this
+              platform, which everyone can avail of through an easy-to-use
+              interface and quick process.  But their success wasn't just about
+              creating a platform - it was about creating a long-lasting
+              relationship with their customers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-[#2E2B70] max-w-full">
+    <div class="container-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:py-[80px] py-[20px] lg:max-h-[438px] h-auto md:gap-[73px] gap-[20px]">
+      <div class="max-w-[367px]">
+        <img src={slogo.src} alt="mignesh-logo">
+        <br>
+        <a href="#" class="leading-[24px] text-[#AAACB8] hover:text-[#FEC49A] text-justify">
+          B-308, Shaligram Lakeview, Opp.Balaji Wind Park,
+          Nr. Vaishnodevi Circle, Sardar Patel Ring Road,
+          Ahmedabad, Gujarat - 382421
+        </a>
+        <div class="flex flex-row gap-[17px] md:mt-3 mt-2">
+          <a href="#">
+            <img src={facebook.src} alt="facebook" class="hover:bg-[#FEC49A] hover:rounded-3xl">
+          </a>
+          <a href="#">
+            <img src={twitter.src} alt="facebook" class="hover:bg-[#FEC49A] hover:rounded-3xl">
+          </a>
+          <a href="#">
+            <img src={linkedin.src} alt="facebook" class="hover:bg-[#FEC49A] hover:rounded-3xl">
+          </a>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-[#FFFFFF] text-[1.5rem] font-bold leading-[32px] h-[44px] pt-[20px]">Products</h1>
+        <br>
+        <ul>
+          <li>
+            <a href="#" class="text-[#AAACB8] hover:text-[#FEC49A]">
+              Bitumen & Bitumen Products
+            </a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="xl:leading-[32px] text-[#AAACB8] hover:text-[#FEC49A]">
+              Lubricant Raw Material
+            </a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="xl:leading-[2px]  text-[#AAACB8] hover:text-[#FEC49A]">
+              Building & Construction Raw Material
+            </a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="xl:leading-[32px]  text-[#AAACB8] hover:text-[#FEC49A]">
+              Petroleum Products
+            </a>
+          </li>
+          <li class="my-1">
+            <a href="#" class="xl:leading-[12px] text-[#AAACB8] hover:text-[#FEC49A]">
+              Polymer Products
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h1 class="text-[#FFFFFF] text-[1.5rem] font-bold leading-[32px] pt-[20px]">Quick Links</h1>
+        <br>
+        <a href="#" class="leading-[32px] text-[#AAACB8] hover:text-[#FEC49A] block">
+          About Us
+        </a>
+        <a href="#" class="leading-[32px] text-[#AAACB8] hover:text-[#FEC49A] block">
+          Client
+        </a>
+        <a href="#" class="leading-[32px] text-[#AAACB8] hover:text-[#FEC49A] block">
+          Contact Us
+        </a>
+      </div>
+      <div>
+        <h1 class="text-[#FFFFFF] text-[1.5rem] font-bold leading-[32px] pt-[20px]">Get in Touch</h1>
+        <br>
+        <p class="leading-[22px] text-[#AAACB8]">Question or Feedback?
+          We’d love to here from you
+        </p>
+        <div class="bg-[#1B1944] flex flex-row flex-wrap p-2 rounded-[5px] max-w-[243px] md:mt-[12px] mt-[6px]">
+          <input type="text" placeholder="email" class="bg-[transparent] text-[white] w-[90%]">
+          <img src={vector.src} alt="vector" class="h-4 w-2">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="bg-[#1B1944]">
+    <p class="container-1 py-[18px] text-[#AAACB8] leading-[24px]">
+      © 2023 MIGNESH Global Limited. All Rights Reserved.
+    </p>
+  </footer>
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });     
+</script>
+
+  <style></style>
+</Layout>

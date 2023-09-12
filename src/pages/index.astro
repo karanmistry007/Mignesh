@@ -4,83 +4,113 @@ import Why from "../components/Why.astro";
 import Product from "../components/Product.astro";
 import Faq from "../components/Faq.astro";
 import Process from "../components/Process.astro";
-
 ---
 
 <Layout title="Mignesh Global">
   <main>
     <!-- slider section  -->
-	<section class="slider bg-[#D9D9D9] relative overflow-hidden">
-		
-    <div class="slide-1 bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0">
-			<img class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden" src="../../public/images/slide_1_1.png" alt="">
-			<img class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0" src="../../public/images/slide_1.png" alt="">
+    <section class="slider bg-[#D9D9D9] relative overflow-hidden">
+      <div
+        class="slide-1 bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0"
+      >
+        <img
+          class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden"
+          src="../../public/images/slide_1_1.png"
+          alt=""
+        />
+        <img
+          class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0"
+          src="../../public/images/slide_1.png"
+          alt=""
+        />
 
-      <div class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto  md:bottom-10 lg:bottom-20 lg:max-w-[240px] lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]">
-        <img src="../../public/images/drum.png" alt="">
-      </div>
-		</div>
-
-    <div class="slide-2 hidden bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0">
-			<img class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden" src="../../public/images/slide_2_1.png" alt="">
-			<img class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0" src="../../public/images/slide_2.png" alt="">
-
-      <div class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto  md:bottom-10 lg:bottom-20 lg:max-w-[240px] lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]">
-        <img src="../../public/images/truck.png" alt="">
-      </div>
-		</div>
-
-    <div class="slide-3 hidden bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0">
-			<img class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden" src="../../public/images/slide_3_1.png" alt="">
-			<img class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0" src="../../public/images/slide_3.png" alt="">
-
-      <div class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto  md:bottom-10 lg:bottom-20 lg:max-w-[240px] lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]">
-        <img src="../../public/images/oil.png" alt="">
-      </div>
-		</div>
-
-    
-
-		<div class="txt md:w-full md:absolute left-0 top-0 ">
-			<div class="caption w-fit md:w-auto container-1 py-6 md:py-16">
-			  <h2
-				class="text-2xl md:text-[40px] md:leading-[48px] text-[#48389C] uppercase md:w-[386px]"
-			  >
-				<span class="normal-case">
-				  Welcome to
-				  <br />
-				</span>
-				<b class="text-3xl md:text-5xl">Mignesh</b> Global!
-			  </h2>
-			  <p
-				class="text-sm md:text-lg leading-6 md:w-[414px] text-[#2C2C2C] my-5"
-			  >
-				Your one-stop platform to purchase high-quality Infrasture &
-				Lubricant products such as Bitumen, Emulsion, Base Oil, Furnace Oil,
-				etc.
-			  </p>
-			  <button
-				class="text-base flex justify-evenly h-11 w-[209px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
-			  >
-				<span> CHECK PRODUCTS</span>
-				<img src="../../public/images/right_arrow.png" alt=">" />
-			  </button>
-			</div>
-		</div>
-
-
-
-      <div class="btns flex gap-3 flex-col h-[50vh] md:h-full left-4 justify-center items-center absolute top-0 md:left-5">
-        <button class="btn-1 bg-[#E98135] w-[5px] h-[30px] rounded-[3px]"></button>
-        <button class="btn-2 bg-[#2E2C7090] w-[5px] h-[30px] rounded-[3px]" ></button>
-        <button class="btn-3 bg-[#2E2C7090] w-[5px] h-[30px] rounded-[3px]"></button>
+        <div
+          class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto md:bottom-10 lg:bottom-20 lg:max-w-[240px] xl:max-w-[300px] 2xl:max-w-max lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]"
+        >
+          <img src="../../public/images/drum.png" alt="" />
+        </div>
       </div>
 
-      
-	</section>
+      <div
+        class="slide-2 hidden bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0"
+      >
+        <img
+          class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden"
+          src="../../public/images/slide_2_1.png"
+          alt=""
+        />
+        <img
+          class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0"
+          src="../../public/images/slide_2.png"
+          alt=""
+        />
 
+        <div
+          class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto md:bottom-10 lg:bottom-20 lg:max-w-[240px] xl:max-w-[300px] 2xl:max-w-max lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]"
+        >
+          <img src="../../public/images/truck.png" alt="" />
+        </div>
+      </div>
 
+      <div
+        class="slide-3 hidden bg h-[50vh] sm:h-[55vh] md:h-[80vh] md:max-h-[550px] lg:h-screen lg:max-h-[701px] object-cover relative md:ml-[30vw] lg:ml-[15vw] xl:ml-[5vw] 2xl:ml-0"
+      >
+        <img
+          class="h-full absolute top-0 left-[-28vh] l-650 max-w-none object-cover object-center md:object-left md:hidden"
+          src="../../public/images/slide_3_1.png"
+          alt=""
+        />
+        <img
+          class="hidden md:block h-full object-cover object-left md:ml-auto absolute top-0 right-0"
+          src="../../public/images/slide_3.png"
+          alt=""
+        />
 
+        <div
+          class="absolute max-w-[150px] md:max-w-[180px] bottom-5 right-5 w-[35%] md:right-auto md:bottom-10 lg:bottom-20 lg:max-w-[240px] xl:max-w-[300px] 2xl:max-w-max lg:w-auto lg:left-0 xl:left-[10vw] 2xl:left-auto 2xl:right-[1025px]"
+        >
+          <img src="../../public/images/oil.png" alt="" />
+        </div>
+      </div>
+
+      <div class="txt md:w-full md:absolute left-0 top-0">
+        <div class="caption w-fit md:w-auto container-1 py-6 md:py-16">
+          <h2
+            class="text-2xl md:text-[40px] md:leading-[48px] text-[#48389C] uppercase md:w-[386px]"
+          >
+            <span class="normal-case">
+              Welcome to
+              <br />
+            </span>
+            <b class="text-3xl md:text-5xl">Mignesh</b> Global!
+          </h2>
+          <p
+            class="text-sm md:text-lg leading-6 md:w-[414px] text-[#2C2C2C] my-5"
+          >
+            Your one-stop platform to purchase high-quality Infrasture &
+            Lubricant products such as Bitumen, Emulsion, Base Oil, Furnace Oil,
+            etc.
+          </p>
+          <button
+            class="text-base flex justify-evenly h-11 w-[209px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
+          >
+            <span> CHECK PRODUCTS</span>
+            <img src="../../public/images/right_arrow.png" alt=">" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="btns flex gap-3 flex-col h-[50vh] md:h-full left-4 justify-center items-center absolute top-0 md:left-5"
+      >
+        <button class="btn-1 bg-[#E98135] w-[5px] h-[30px] rounded-[3px]"
+        ></button>
+        <button class="btn-2 bg-[#2E2C7090] w-[5px] h-[30px] rounded-[3px]"
+        ></button>
+        <button class="btn-3 bg-[#2E2C7090] w-[5px] h-[30px] rounded-[3px]"
+        ></button>
+      </div>
+    </section>
 
     <!-- Why choose us section  -->
     <section
@@ -115,8 +145,14 @@ import Process from "../components/Process.astro";
               source="../../public/images/why_1.svg"
               body="One-stop platform for a variety of products!"
             />
-            <Why source="../../public/images/why_2.svg" body="Best Market <br> Rates." />
-            <Why source="../../public/images/why_3.svg" body="Free <br> Samples." />
+            <Why
+              source="../../public/images/why_2.svg"
+              body="Best Market <br> Rates."
+            />
+            <Why
+              source="../../public/images/why_3.svg"
+              body="Free <br> Samples."
+            />
             <Why
               source="../../public/images/why_4.svg"
               body="Fast Distribution with Mignesh Logistics."
@@ -136,7 +172,7 @@ import Process from "../components/Process.astro";
 
     <!-- product section  -->
     <section class="products">
-      <div class="products container-1 my-10 sm:my-20">
+      <div class="products container-1 py-10 sm:py-20">
         <div class="head-txt text-center md:text-left">
           <h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
             Browse through our diverse
@@ -217,66 +253,65 @@ import Process from "../components/Process.astro";
             ordering process!
           </h2>
         </div>
+        <div
+          class="lg:bg-[url(../../public/images/union.png)] bg-no-repeat bg-contain xl:mx-20 gap-5 my-5 lg:my-0"
+        >
           <div
-            class="lg:bg-[url(../../public/images/union.png)] bg-no-repeat bg-contain xl:mx-20 gap-5 my-5"
+            class="lg:flex flex-col lg:flex-row justify-center relative lg:bottom-[20px] xl:bottom-[10px] 2xl:bottom-[43px] lg:left-[100px] xl:left-0"
           >
-            <div
-              class="lg:flex flex-col lg:flex-row justify-center relative lg:bottom-[20px] xl:bottom-[10px] 2xl:bottom-[43px] lg:left-[100px] xl:left-0"
-            >
-              <Process
-                title="Choose the right products."
-                ,
-                body="You can browse the range of products from our website and choose as per your requirements."
-                source1="../../public/images/process_1.png"
-                ,
-                source2="../../public/images/1.svg"
-              />
-              <Process
-                title="Reach out to us!"
-                ,
-                body="You can reach out to (91) 96014 76223 and place your order with us."
-                source1="../../public/images/process_2.png"
-                ,
-                source2="../../public/images/2.svg"
-              />
-            </div>
-
-            <div
-              class="lg:flex flex-col lg:flex-row-reverse justify-center relative lg:bottom-[-3px] xl:bottom-[-36px] 2xl:bottom-0 lg:gap-5 2xl:gap-10"
-            >
-              <Process
-                title="Sample checking!"
-                ,
-                body="To analyze the quality of our products, we will send you some of the pictures and report for the products via Whatsapp or email. If you want, we can even send the sample to you before placing an order."
-                source1="../../public/images/process_3.png"
-                ,
-                source2="../../public/images/3.svg"
-              />
-              <Process
-                title="Final Payment"
-                ,
-                body="If you find everything well, you can make a final payment for the confirmation of your order."
-                source1="../../public/images/process_4.png"
-                ,
-                source2="../../public/images/4.svg"
-              />
-              <Process
-                title="Seamless Tracking"
-                ,
-                body="The process is not over yet! After making final payment, you can even track your products status through our end-to-end GPS tracking."
-                source1="../../public/images/process_5.png"
-                ,
-                source2="../../public/images/5.svg"
-              />
-            </div>
+            <Process
+              title="Choose the right products."
+              ,
+              body="You can browse the range of products from our website and choose as per your requirements."
+              source1="../../public/images/process_1.png"
+              ,
+              source2="../../public/images/1.svg"
+            />
+            <Process
+              title="Reach out to us!"
+              ,
+              body="You can reach out to (91) 96014 76223 and place your order with us."
+              source1="../../public/images/process_2.png"
+              ,
+              source2="../../public/images/2.svg"
+            />
           </div>
 
+          <div
+            class="lg:flex flex-col lg:flex-row-reverse justify-center relative lg:bottom-[-3px] xl:bottom-[-36px] 2xl:bottom-0 lg:gap-5 2xl:gap-10"
+          >
+            <Process
+              title="Sample checking!"
+              ,
+              body="To analyze the quality of our products, we will send you some of the pictures and report for the products via Whatsapp or email. If you want, we can even send the sample to you before placing an order."
+              source1="../../public/images/process_3.png"
+              ,
+              source2="../../public/images/3.svg"
+            />
+            <Process
+              title="Final Payment"
+              ,
+              body="If you find everything well, you can make a final payment for the confirmation of your order."
+              source1="../../public/images/process_4.png"
+              ,
+              source2="../../public/images/4.svg"
+            />
+            <Process
+              title="Seamless Tracking"
+              ,
+              body="The process is not over yet! After making final payment, you can even track your products status through our end-to-end GPS tracking."
+              source1="../../public/images/process_5.png"
+              ,
+              source2="../../public/images/5.svg"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- client section  -->
     <section class="client">
-      <div class="client container-1 my-10 sm:my-20">
+      <div class="client container-1 py-8 sm:py-16">
         <div class="head text-center md:text-left">
           <h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
             Our
@@ -289,7 +324,7 @@ import Process from "../components/Process.astro";
         </div>
 
         <!-- client sloder -->
-        <div class="customer-logos w-full slider my-16 sm:my-20">
+        <div class="customer-logos w-full slider mt-8 md:mt-16 ">
           <div class="slide">
             <img decoding="async" src="../../public/images/client_1.png" />
           </div>
@@ -337,7 +372,7 @@ import Process from "../components/Process.astro";
             </h2>
           </div>
 
-          <div class="selectbox w-full md:max-w-[300px] lg:max-w-[440px]">
+          <div class="selectbox w-full md:max-w-[300px] lg:max-w-[440px] bg-white">
             <select name="refinery" id="" class="border rounded-lg w-full p-4">
               <option value="0">Select Refinery</option>
               <option value="1">Option 1</option>
@@ -347,21 +382,21 @@ import Process from "../components/Process.astro";
           </div>
         </div>
 
-        <div class="my-12">
+        <div class="mt-12">
           <div
-            class="thead bg-[#5A6079] text-white flex flex-col md:flex-row justify-between gap-2.5 p-[14px]  border-white"
+            class="thead bg-[#5A6079] text-white flex flex-col md:flex-row justify-between gap-2.5 p-[14px] border-white"
           >
             <h3 class="text-xl md:text-2xl md:leading-6 font-bold">
               Bharat Petroleum Corporation Limited
             </h3>
             <div
-            class="font-semibold text-base flex items-center md:items-start lg:items-center gap-2.5"
+              class="font-semibold text-base flex items-center md:items-start lg:items-center gap-2.5"
             >
-            <div class="calendar-icon">
-              <img src="../../public/images/calender_icon.svg" alt="">
-            </div>
-            
-            <!-- <label for="date-picker" class="calendar-icon"><img src="/images/calender_icon.svg" alt=""></label>
+              <div class="calendar-icon">
+                <img src="../../public/images/calender_icon.svg" alt="" />
+              </div>
+
+              <!-- <label for="date-picker" class="calendar-icon"><img src="/images/calender_icon.svg" alt=""></label>
             <input id="date-picker" class="" type="date"> -->
 
               <span> Last Updated on August 1, 2023</span>
@@ -506,6 +541,14 @@ import Process from "../components/Process.astro";
               </tbody>
             </table>
           </div>
+          <div class="w-full mt-8">
+            <button
+              class="text-base flex gap-3 p-2 sm:gap-5 sm:px-4 sm:py-3 items-center bg-[#E98135] rounded-[5px] text-white m-auto uppercase"
+            >
+              <span>Download Price List PDF</span>
+              <img src="../../public/images/right_arrow.png" alt=">" />
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -514,7 +557,7 @@ import Process from "../components/Process.astro";
     <section class="source bg-gradient-to-r from-[#242D4A] to-[#4B5EAA]">
       <div class="source container-1">
         <div
-          class="py-10 md:py-16 gap-10 flex flex-col-reverse md:flex-row justify-between items-center text-white"
+          class="py-8 md:py-14 gap-10 flex flex-col-reverse md:flex-row justify-between items-center text-white"
         >
           <div class="md:w-[65%] lg:w-[65%] xl:w-auto">
             <h2
@@ -524,7 +567,7 @@ import Process from "../components/Process.astro";
                from Mignesh Global!
             </h2>
             <button
-              class="mt-6 text-sm sm:text-base flex justify-evenly gap-2 p-2 sm:h-11 sm:w-full sm:max-w-[240px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
+              class="mt-6 text-sm sm:text-base flex justify-around gap-2 p-2 sm:h-11 sm:w-full sm:max-w-[240px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
             >
               <span> CHECK PRODUCTS NOW</span>
               <img src="../../public/images/right_arrow.png" alt=">" />
@@ -622,8 +665,8 @@ import Process from "../components/Process.astro";
 
     <!-- faq section  -->
     <section class="faq bg-[#5A6079] text-white">
-      <div class="faq container-1 mt-10 sm:mt-20">
-        <div class="head text-center md:text-left py-10 sm:py-20">
+      <div class="faq container-1 py-8 sm:py-16">
+        <div class="head text-center md:text-left mb-10 sm:mb-20">
           <h6 class="text-[#EA8135] font-bold text-lg sm:text-xl md:leading-7">
             FAQs
           </h6>
@@ -633,7 +676,7 @@ import Process from "../components/Process.astro";
         </div>
 
         <div
-          class="grid md:grid-cols-2 justify-between gap-8 md:gap-4 xl:gap-16 pb-10 md:pb-20"
+          class="grid md:grid-cols-2 justify-between gap-8 md:gap-4 xl:gap-10"
         >
           <Faq
             source="../../public/images/1.svg"
@@ -691,33 +734,34 @@ import Process from "../components/Process.astro";
 
   <style is:global>
     /* animation slider  */
-    .slider .btn-1,.slider .btn-2, .slider .btn-3{
+    .slider .btn-1,
+    .slider .btn-2,
+    .slider .btn-3 {
       transition: all 0.3s ease-in-out;
     }
 
-    .slider .slide-1, .slider .slide-2 ,.slider .slide-3{
-      animation: from-right 0.8s ease-in-out
+    .slider .slide-1,
+    .slider .slide-2,
+    .slider .slide-3 {
+      animation: from-right 0.8s ease-in-out;
     }
-    @keyframes from-right{
-      0%{
-        transform:translateX(100%);
-        opacity:0;
-
-
+    @keyframes from-right {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
       }
-      100%{
-        transform:translateX(0%);
-        opacity:1;
+      100% {
+        transform: translateX(0%);
+        opacity: 1;
       }
     }
 
-    @keyframes to-left{
-      0%{
-        transform:translateX(0%);
+    @keyframes to-left {
+      0% {
+        transform: translateX(0%);
       }
-      100%{
-        transform:translateX(-100%);
-
+      100% {
+        transform: translateX(-100%);
       }
     }
 
@@ -759,30 +803,30 @@ import Process from "../components/Process.astro";
     }
   </style>
   <style>
-        input[type=date]::-webkit-datetime-edit-text {
-    -webkit-appearance: none;
-    display: none;
+    input[type="date"]::-webkit-datetime-edit-text {
+      -webkit-appearance: none;
+      display: none;
     }
-    input[type=date]::-webkit-datetime-edit-month-field{
-        -webkit-appearance: none;
-        display: none;
+    input[type="date"]::-webkit-datetime-edit-month-field {
+      -webkit-appearance: none;
+      display: none;
     }
-    input[type=date]::-webkit-datetime-edit-day-field {
-        -webkit-appearance: none;
-        display: none;
+    input[type="date"]::-webkit-datetime-edit-day-field {
+      -webkit-appearance: none;
+      display: none;
     }
-    input[type=date]::-webkit-datetime-edit-year-field {
-        -webkit-appearance: none;
-        display: none;
+    input[type="date"]::-webkit-datetime-edit-year-field {
+      -webkit-appearance: none;
+      display: none;
     }
     input {
-    color-scheme: dark;
-  }
-
-  @media (min-width:550px){
-    .l-650{
-      left:-130px;
+      color-scheme: dark;
     }
-  }
+
+    @media (min-width: 550px) {
+      .l-650 {
+        left: -130px;
+      }
+    }
   </style>
 </Layout>
