@@ -9,25 +9,25 @@ $(document).ready(function () {
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1025,
         settings: {
           slidesToShow: 4,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 580,
+        breakpoint: 640,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 350,
+        breakpoint: 380,
         settings: {
           slidesToShow: 1,
         },

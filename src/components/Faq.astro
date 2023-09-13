@@ -8,11 +8,11 @@ interface Props {
 const { source, head, body } = Astro.props;
 ---
 
-
-<div class="max-w-[600px] gap-3 lg:gap-4 flex items-start">
-    <img class="w-[23px]  drop-shadow-[0px_0px_5px_#00000066]" src={source} alt="">
+<!-- drop-shadow-[0px_0px_5px_#00000066] -->
+<div class="max-w-[614px] gap-3 lg:gap-3 flex items-start">
+    <img class="w-[32px]  " src={source} alt="">
     <div class="txt">
-        <h3 class="font-bold text-base sm:text-lg mb-1">
+        <h3 class="font-bold text-base sm:text-[18px] sm:leading-6 mb-[5px]">
             {head}
         </h3>
         <p class="text-sm sm:text-base">
