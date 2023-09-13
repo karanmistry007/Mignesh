@@ -187,7 +187,7 @@ import Process from "../components/Process.astro";
         </div>
 
         <div
-          class="products grid md:grid-cols-2 xl:grid-cols-3 gap-[15px] md:gap-[26px] justify-center md:justify-between mt-10 md:mt-[60px] w-fit m-auto"
+          class="products grid md:grid-cols-2 xl:grid-cols-3 gap-[25px] md:gap-[26px] justify-center md:justify-between mt-10 md:mt-[60px] w-fit m-auto"
         >
           <Product
             title="Bitumen & Bitumen Products"
@@ -629,12 +629,18 @@ import Process from "../components/Process.astro";
               Source the high-quality products<br class="hidden xl:block" />
                from Mignesh Global!
             </h2>
-            <button
-              class="mt-6 text-sm sm:text-base flex justify-around gap-2 p-2 sm:h-11 sm:w-full sm:max-w-[240px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
+            <!-- <button
+              class="mt-6 hidden text-sm sm:text-base flex justify-around gap-2 p-2 sm:h-11 sm:w-full sm:max-w-[240px] items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0"
             >
               <span> CHECK PRODUCTS NOW</span>
               <img src="images/right_arrow.png" alt=">" />
-            </button>
+            </button> -->
+            <button
+            class="mt-6 text-base flex gap-3 p-2 sm:gap-5 sm:px-4 sm:py-2.5 items-center bg-[#E98135] rounded-[5px] text-white m-auto md:m-0 uppercase"
+          >
+            <span>CHECK PRODUCTS NOW</span>
+            <img src="images/right_arrow.png" alt=">" />
+          </button>
           </div>
           <div class="w-[70%] md:w-auto flex items-center justify-center md:mr-20">
             <img src="images/drum_1.png" alt="" />
@@ -739,7 +745,7 @@ import Process from "../components/Process.astro";
         </div>
 
         <div
-          class="grid md:grid-cols-2 justify-center gap-8 md:gap-x-4 md:gap-y-8 xl:gap-x-10 xl:gap-y-[60px] lg:px-5"
+          class="grid md:grid-cols-2 justify-center gap-8 md:gap-10 lg:gap-16 2xl:gap-10 xl:gap-y-[60px] lg:px-5"
         >
           <Faq
             source="images/faq_1.svg"
