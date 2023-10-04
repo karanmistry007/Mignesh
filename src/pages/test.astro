@@ -3,50 +3,6 @@ import Layout from "../layouts/Layout.astro";
 
 
 //for fetching data into the HTML file
-// const response = await fetch('https://mocki.io/v1/c9df7f2d-fbf3-458b-bad2-3875fb2a4299', {
-//     method: 'GET',
-//     headers: {
-//       "Authorization": 'token 6f66c7715504019:e4bb335676a2d51' 
-//     }
-// })
-// const object = await response.json()
-// const new_data=object.data
-// console.log(object)
-// console.log(new_data)
----
-
-<Layout title="Testing Astro">
-  <div>
-    <h1 class="text-4xl font-bold text-center my-10">Follow Up Details</h1>
-  </div>
-  <div id="data" class="container-1 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-  </div>
-
-  <!-- <div class="container-1 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-    {new_data.map((i)=> <div class=" p-5 rounded-xl min-w-[200px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)]">
-                          <h1>Status: {i.status}</h1>
-                          <h2>Name: {i.lead_name}</h2>
-                          <h2>Property Name: {i.property_name}</h2>
-                          <h2>Time: {i.follow_up_schedule}</h2>                          
-                          <h2>{i.follow_up_by}</h2>
-                          <h2>Communication: {i.communication_type}</h2>
-                        </div>
-                        )}
-  </div> -->
-  <script>
-
-    // create a new element
-    var outer_div = document.getElementById("data");
-
-
-    // console.log(outer_div);
-
-
-
-
-
-
-// fetch json api data
 const response = await fetch('https://mocki.io/v1/c9df7f2d-fbf3-458b-bad2-3875fb2a4299', {
     method: 'GET',
     headers: {
@@ -57,38 +13,22 @@ const object = await response.json()
 const new_data=object.data
 console.log(object)
 console.log(new_data)
+---
 
-new_data.forEach(i => {
-  var inner_div = document.createElement("div");
-    inner_div.classList.add("p-5", "rounded-xl", "min-w-[200px]", "shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)]");
-    outer_div.appendChild(inner_div);
+<Layout title="Testing Astro">
+  <div>
+    <h1 class="text-4xl font-bold text-center my-10">Follow Up Details</h1>
+  </div>
 
-    var status = document.createElement("p");
-    status.innerText="Status: "+i.status;
-    inner_div.appendChild(status);
-
-    var name = document.createElement("p");
-    name.innerText="Name: "+i.lead_name;
-    inner_div.appendChild(name);
-
-    var property = document.createElement("p");
-    property.innerText="Property: "+i.property_name;
-    inner_div.appendChild(property);
-
-    var time = document.createElement("p");
-    time.innerText="Time: "+i.follow_up_schedule;
-    inner_div.appendChild(time);
-
-    var agent = document.createElement("p");
-    agent.innerText=i.follow_up_by;
-    inner_div.appendChild(agent);
-
-    var communication = document.createElement("p");
-    communication.innerText="Communication: "+i.communication_type;
-    inner_div.appendChild(communication);
-});
-
-
-
-  </script>
+  <div class="container-1 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+    {new_data.map((i)=> <div class=" p-5 rounded-xl min-w-[200px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)]">
+                          <h1>Status: {i.status}</h1>
+                          <h2>Name: {i.lead_name}</h2>
+                          <h2>Property Name: {i.property_name}</h2>
+                          <h2>Time: {i.follow_up_schedule}</h2>                          
+                          <h2>{i.follow_up_by}</h2>
+                          <h2>Communication: {i.communication_type}</h2>
+                        </div>
+                        )}
+  </div>
 </Layout>
